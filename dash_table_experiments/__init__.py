@@ -13,6 +13,17 @@ _components = _dash.development.component_loader.load_components(
 _this_module = _sys.modules[__name__]
 
 
+_js_dist = [
+    {
+        'relative_package_path': 'bundle.js',
+        'external_url': (
+            'https://unpkg.com/dash-table-experiments@0.5.1'
+            '/dash_table_experiments/bundle.js'
+        ).format(__version__),
+        'namespace': 'dash_table_experiments'
+    }
+]
+
 _css_dist = [
     {
         'relative_package_path': 'dash_table_experiments.css',
